@@ -85,9 +85,9 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="8dp"
                     android:layout_weight="1"
-                    android:hint="Power (W)"
+                    android:enabled="false"
                     android:focusable="false"
-                    android:enabled="false">
+                    android:hint="Power (W)">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/editTextNumber51"
@@ -273,8 +273,9 @@
                     android:layout_height="match_parent"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:hint="Usage (hr/Day)"
-                    android:enabled="false">
+                    android:backgroundTint="#B82929"
+                    android:enabled="false"
+                    android:hint="Usage (hr/Day)">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/editTextNumber121"

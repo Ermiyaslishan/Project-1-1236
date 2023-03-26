@@ -9,6 +9,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
   @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //we use this code for remove Default Title
       supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
       this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
@@ -159,11 +162,17 @@ public class MainActivity extends AppCompatActivity {
         double mitadTotalConsumption = 0.0;
 
         if (Checkbox1.isChecked()) {
-          double power = Double.parseDouble(editText1.getEditText().getText().toString());
-          double quantity = Double.parseDouble(editText9.getEditText().getText().toString());
-          double usage = Double.parseDouble(editText5.getEditText().getText().toString());
+//          double power = Double.parseDouble(editText1.getEditText().getText().toString());
+//          double quantity = Double.parseDouble(editText9.getEditText().getText().toString());
+//          double usage = Double.parseDouble(editText5.getEditText().getText().toString());
+            String power = editText1.getEditText().getText().toString();
+            String quantity = editText9.getEditText().getText().toString();
+            String usage = editText5.getEditText().getText().toString();
+            if ((power.matches("")) || (quantity.matches("")) || (usage.matches(""))) {
+                Toast.makeText(getApplicationContext(), "Please fill appliance detail", Toast.LENGTH_SHORT).show();
+            }
 
-          lightBulbTotalConsumption = power * quantity * usage * 30;
+//          lightBulbTotalConsumption = power * quantity * usage * 30;
         }
         if (Checkbox2.isChecked()) {
           double power = Double.parseDouble(editText2.getEditText().getText().toString());
@@ -189,11 +198,14 @@ public class MainActivity extends AppCompatActivity {
         double allConsumption = (mitadTotalConsumption + boilerTotalConsumption
                 + lightBulbTotalConsumption + ovenTotalConsumption) / 1000;
 //              double allConsumption = Math.round(allConsumption1);
+
+          //In this place we use if statement to handle empty consumption value
         if (allConsumption == 0) {
           TotalPayableDisplay.setText("0.0");
         }else {
           TotalConsumptionDisplay.setText(String.format("%sKwh", Double.toString(allConsumption)));
         }
+          //In this place we use if statement to handle empty Payable value
         if (allConsumption == 0) {
           TotalPayableDisplay.setText("0.0");
         } else {
@@ -218,7 +230,7 @@ public class MainActivity extends AppCompatActivity {
 
           // Display the result
           TotalPayableDisplay.setText(Double.toString(payable) + " Birr");
-//              TotalPayableDisplay.setText(Double.toString(payable)+ "Birr");
+
 
         }
       }
@@ -267,3 +279,5 @@ btnReset.setOnClickListener(new View.OnClickListener() {
       });
     }
 }
+
+
