@@ -2,7 +2,7 @@
 Project one mobile app devlopement Electric consumption and bill calcuator by Group 8
 
 Mini Electric Bill calculator Android App 
-Name==                                           Id==
+
  ERMIYAS LISHAN------------------------------DBUR/1236/12
  DEGU AMOGNE---------------------------------DBUR/0228/12
  MATIYOS TEKA -------------------------------DBUR/1186/12
