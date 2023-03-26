@@ -68,7 +68,7 @@
                     android:layout_marginStart="0dp"
                     android:gravity="left|center_vertical|center_horizontal|center|start"
                     android:text="Light Bulb"
-                    android:textSize="14sp" />
+                    android:textSize="15sp" />
 
             </LinearLayout>
 
@@ -85,9 +85,9 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="8dp"
                     android:layout_weight="1"
-                    android:hint="Power (W)"
+                    android:enabled="false"
                     android:focusable="false"
-                    android:enabled="false">
+                    android:hint="Power (W)">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/editTextNumber51"
@@ -147,7 +147,7 @@
                     android:layout_marginStart="0dp"
                     android:gravity="left|center_vertical|center_horizontal|center|start"
                     android:text="Electric Oven /stove/"
-                    android:textSize="14sp" />
+                    android:textSize="15sp" />
 
             </LinearLayout>
 
@@ -222,7 +222,7 @@
                     android:layout_marginStart="0dp"
                     android:gravity="left|center_vertical|center_horizontal|center|start"
                     android:text="Electric Kettle /Boiler/"
-                    android:textSize="14sp" />
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -273,8 +273,9 @@
                     android:layout_height="match_parent"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
-                    android:hint="Usage (hr/Day)"
-                    android:enabled="false">
+                    android:backgroundTint="#B82929"
+                    android:enabled="false"
+                    android:hint="Usage (hr/Day)">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/editTextNumber121"
@@ -298,7 +299,7 @@
                     android:layout_marginStart="0dp"
                     android:gravity="left|center_vertical|center_horizontal|center|start"
                     android:text="Electric Grill /Mitad/"
-                    android:textSize="14sp" />
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <LinearLayout
