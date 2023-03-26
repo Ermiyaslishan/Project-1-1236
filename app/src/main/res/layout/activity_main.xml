@@ -435,6 +435,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="2dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#009688"
                     android:text="Calculate"
                     android:textColor="#FBF6F6"
                     android:textSize="16sp" />
@@ -447,6 +448,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1"
+                    android:backgroundTint="#009688"
                     android:text="Reset"
                     android:textColor="#F4F3F3"
                     android:textSize="16sp" />
