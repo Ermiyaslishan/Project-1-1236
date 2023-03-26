@@ -170,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
               double ovenTotalConsumption = 0.0;
               double boilerTotalConsumption = 0.0;
               double mitadTotalConsumption = 0.0;
-
+              //This If statement check's Bulb and the text fields for validation
               if (Checkbox1.isChecked()) {
                   if (isInputValid(editText1, editText9, editText5)) {
                       double power = Double.parseDouble(editText1.getEditText().getText().toString());
@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
               }
 
 
-
+              //This If statement check's Stove and the text fields for validation
                   if (Checkbox2.isChecked()) {
                       if (isInputValid(editText2, editText10, editText6)){
                           double power = Double.parseDouble(editText2.getEditText().getText().toString());
@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
                       Toast.makeText(getApplicationContext(), "Please Fill The Required Value", Toast.LENGTH_SHORT).show();
                   }}
 
-
+           //This If statement check's Boiler and the text fields for validation
                   if (Checkbox3.isChecked()) {
                       if (isInputValid(editText3, editText11, editText7)){
                       double power = Double.parseDouble(editText3.getEditText().getText().toString());
@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
                       Toast.makeText(getApplicationContext(), "Please Fill The Required Value", Toast.LENGTH_SHORT).show();
                   }}
 
-
+              //This If statement check's Grill and the text fields for validation
                   if (Checkbox4.isChecked()) {
                       if (isInputValid(editText4, editText8, editText12)){
                       double power = Double.parseDouble(editText4.getEditText().getText().toString());
