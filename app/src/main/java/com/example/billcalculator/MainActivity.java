@@ -224,6 +224,46 @@ public class MainActivity extends AppCompatActivity {
       }
 
     });
+btnReset.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              Checkbox1.setChecked(false);
+              Checkbox2.setChecked(false);
+              Checkbox3.setChecked(false);
+              Checkbox4.setChecked(false);
 
+              TotalConsumptionDisplay.setText("0.0");
+              TotalPayableDisplay.setText("0.0");
+
+
+              editText1.setEnabled(false);
+              editText1.getEditText().setEnabled(false);
+              editText9.setEnabled(false);
+              editText9.getEditText().setEnabled(false);
+              editText5.setEnabled(false);
+              editText5.getEditText().setEnabled(false);
+
+              editText2.setEnabled(false);
+              editText2.getEditText().setEnabled(false);
+              editText10.setEnabled(false);
+              editText10.getEditText().setEnabled(false);
+              editText6.setEnabled(false);
+              editText6.getEditText().setEnabled(false);
+
+              editText3.setEnabled(false);
+              editText3.getEditText().setEnabled(false);
+              editText11.setEnabled(false);
+              editText11.getEditText().setEnabled(false);
+              editText7.setEnabled(false);
+              editText7.getEditText().setEnabled(false);
+
+              editText4.setEnabled(false);
+              editText4.getEditText().setEnabled(false);
+              editText12.setEnabled(false);
+              editText12.getEditText().setEnabled(false);
+              editText8.setEnabled(false);
+              editText8.getEditText().setEnabled(false);
+          }
+      });
     }
 }
